@@ -1,8 +1,9 @@
 $baseFontFamily: Gabriela;
 @import url(http://fonts.googleapis.com/css?family=Gabriela);
 
-$navbarBackgroundHighlight: lightPink;
-$navbarBackground: Pink;
+$navbarBackgroundHighlight: #e59898;
+$navbarBackground: #e59898;
+$bodyBackground: #ebe3eb;
 
 @import 'bootstrap';
 
@@ -10,6 +11,44 @@ $navbarBackground: Pink;
 	@include box-shadow(none !important);
 	border: 0;
 }
+
+.navbar .brand {
+  color: white;
+  text-shadow: 0 1px 0 #e59898;
+}
+
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 15px 10px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #e59898;
+}
+
+.hero-unit {
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 38px;
+  color: inherit;
+  background-color: #f9f1f5;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.hero-unit h1{
+  font-size: 68px;
+  font-weight: 200;
+}
+
+.hero-unit h2{
+  font-size: 38px;
+  font-weight: 200;
+  line-height: 58px;
+}
+
 
 body {
 	padding-top: 60px;
